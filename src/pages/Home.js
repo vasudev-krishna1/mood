@@ -3,8 +3,11 @@ import EntriesChart from '../components/EntriesChart';
 import MoodEntryForm from '../components/MoodEntryForm';
 import './Home.css'; // Import CSS for Home
 
+
+
 const Home = () => {
   const [entries, setEntries] = useState([]);
+  
 
   const handleAddEntry = (entry) => {
     setEntries([entry, ...entries]);
@@ -20,6 +23,10 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      <div className="nav-bar">
+        {/* <button onClick={() => navigate("/signup")}>Signup</button> */}
+        {/* <button onClick={() => navigate("/login")}>Login</button> */}
+      </div>
       <h2>Welcome to Your Mental Health Journal</h2>
       <p>Track your mental health, express your thoughts, and discover resources for your well-being.</p>
       

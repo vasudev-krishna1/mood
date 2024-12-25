@@ -33,3 +33,29 @@
   .entry-form button:hover {
     background-color: #4A3C2F; /* Darker coffee brown */
   }
+  /* Mood Entry Input Styling */
+.entry-form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #6F4E37; /* Coffee brown */
+  border-radius: 4px;
+  background-color: #fff; /* White background for the dropdown */
+  font-size: 1rem; /* Matching font size */
+  color: #333; /* Dark color for text */
+  margin-bottom: 1rem; /* Space below the select field */
+}
+
+.entry-form select:focus {
+  border-color: #4A3C2F; /* Darker coffee brown when focused */
+  outline: none; /* Remove the default focus outline */
+  background-color: #F5E0C3; /* Beige background on focus */
+}
+
+.entry-form select option {
+  background-color: #fff; /* White background for options */
+  color: #333; /* Dark text color */
+}
+
+.entry-form select option:hover {
+  background-color: #F5E0C3; /* Beige hover effect */
+}

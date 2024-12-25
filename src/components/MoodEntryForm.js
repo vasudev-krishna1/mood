@@ -12,7 +12,11 @@ const MoodEntryForm = ({ onAddEntry }) => {
       case 'happy': return 5;
       case 'neutral': return 3;
       case 'sad': return 1;
-      default: return 0;
+      case 'angry': return 2;
+      case 'excited': return 4;
+      case 'anxious': return 2;
+      case 'relaxed': return 4;
+      default: return 0; // If the mood doesn't match, return a score of 0
     }
   };
 
@@ -39,12 +43,20 @@ const MoodEntryForm = ({ onAddEntry }) => {
       </label>
       <label>
         Mood:
-        <input
-          type="text"
+        <select
           value={mood}
           onChange={(e) => setMood(e.target.value)}
           required
-        />
+        >
+          <option value="">Select a mood</option>
+          <option value="happy">Happy</option>
+          <option value="neutral">Neutral</option>
+          <option value="sad">Sad</option>
+          <option value="angry">Angry</option>
+          <option value="excited">Excited</option>
+          <option value="anxious">Anxious</option>
+          <option value="relaxed">Relaxed</option>
+        </select>
       </label>
       <label>
         Details:
